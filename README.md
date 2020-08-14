@@ -2,9 +2,11 @@
 
 ### Tech-Stack
 
-- `NodeJS`
+- `NodeJS v14.7.0`
 - `ExpressJS v4.17.1`
 - `Socket.IO v2.3.0` : communicate client & server REAL-TIME ENGINE
+- `WebRTC` : provides web browsers and mobile applications with real-time communication
+- `peer v0.5.3` : provides a complete, configurable, and easy-to-use peer-to-peer API built on top of WebRTC, supporting both data channels and media streams.
 - `Nodemon v2.0.4` : restarting the app when file changes
 - `Morgan v1.10.0` : HTTP Logger
 - `ejs v3.1.3` : Embedded Javascript, get variables from the BE to FE
