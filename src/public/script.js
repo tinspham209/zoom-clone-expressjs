@@ -31,6 +31,22 @@ navigator.mediaDevices
 		socket.on("user-connected", (userId) => {
 			connectToNewUser(userId, stream);
 		});
+
+		// replace JQuery with $
+		let text = $("input");
+
+		$("html").keydown((e) => {
+			if (e.which == 13 && text.val().length !== 0) {
+				// Enter key == 13
+				socket.emit("message", text.val());
+				text.val("");
+			}
+		});
+
+		socket.on("createMessage", (message) => {
+			$("ul").append(`<li class="message"><b>user: </b>${message}</li>`);
+			scrollToBottom();
+		});
 	});
 
 peer.on("open", (id) => {
@@ -51,4 +67,9 @@ const addVideoStream = (video, stream) => {
 		video.play();
 	});
 	videoGrid.append(video);
+};
+
+const scrollToBottom = () => {
+	let d = $(".main__chat_window");
+	d.scrollTop(d.prop("scrollHeight"));
 };
