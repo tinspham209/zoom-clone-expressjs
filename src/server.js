@@ -8,6 +8,10 @@ const morgan = require("morgan");
 const io = require("socket.io")(server);
 
 const { v4: uuidv4 } = require("uuid");
+const { ExpressPeerServer } = require("peer");
+const peerServer = ExpressPeerServer(sever, {
+	debug: true,
+});
 
 // HTTP logger
 app.use(morgan("combined"));
@@ -18,6 +22,7 @@ app.set("views", path.join(__dirname, "views"));
 // Set public folder
 app.use(express.static(path.join(__dirname, "public")));
 
+app.use("/peerjs", peerServer);
 app.get("/", (req, res) => {
 	res.redirect(`/${uuidv4()}`);
 });
@@ -27,8 +32,9 @@ app.get("/:room", (req, res) => {
 });
 
 io.on("connection", (socket) => {
-	socket.on("join-room", () => {
-		console.log("joined room");
+	socket.on("join-room", (roomId) => {
+		socket.join(roomId);
+		socket.to(roomId).broadcast.emit("user-connected");
 	});
 });
 
