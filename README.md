@@ -13,6 +13,7 @@
 - `uuid v8.3.0` : unique id
 - `bootstrap 4`
 - `FontAwesome icons`
+- `jQuery`
 
 ### Deploy
 
@@ -44,6 +45,10 @@ I have understand about
 - Create unique id user with uuid
 - Using Socket.IO to communicate between Client & Server in Real-Time
 - Using Peer to PTP API on top of WebRTC, share media streams & data channels in Real-Time
+- Using jQuery
+  - tracking message when user typing text and hit enter key
+  - append <li> tag when have message coming from server
+  - tracking to scrollBottom when chat_window is full
 
 ### Directory Structure
 
