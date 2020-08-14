@@ -6,6 +6,7 @@
 - `ExpressJS`
 - `Nodemon` : restarting the app when file changes
 - `Morgan` : HTTP Logger
+- `ejs` : Embedded Javascript, get variables from the BE to FE
 
 ### Deploy
 
