@@ -1,9 +1,12 @@
 const express = require("express");
 const app = express();
-const morgan = require("morgan");
 const path = require("path");
-const server = require("http").Server(app);
+
 const PORT = 5000;
+const server = require("http").Server(app);
+const morgan = require("morgan");
+
+const { v4: uuidv4 } = require("uuid");
 
 // HTTP logger
 app.use(morgan("combined"));
@@ -12,7 +15,11 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
 app.get("/", (req, res) => {
-	res.render("room");
+	res.redirect(`/${uuidv4()}`);
+});
+
+app.get("/:room", (req, res) => {
+	res.render("room", { roomId: req.params.room });
 });
 
 server.listen(PORT, () =>
