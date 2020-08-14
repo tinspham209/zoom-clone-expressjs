@@ -20,6 +20,10 @@
 
 https://zoom-clone-nodejs-sdgsdg.herokuapp.com
 
+### Screenshot
+
+<img src="https://i.imgur.com/pgmT8TR.png" />
+
 ### Plan Of Action
 
 - Initialize NodeJS Project - DONE
@@ -51,7 +55,7 @@ I have understand about
 - Using Peer to PTP API on top of WebRTC, share media streams & data channels in Real-Time
 - Using jQuery
   - tracking message when user typing text and hit enter key
-  - append <li> tag when have message coming from server
+  - append 'li' tag when server send the message
   - tracking to scrollBottom when chat_window is full
   - set mute/unmute audio, play/stop video button onClick
 
@@ -75,8 +79,6 @@ I have understand about
 
 ### Set up
 
-`npm install` and `npm start`
-
-### Screenshot
-
-<img src="https://i.imgur.com/pgmT8TR.png" />
+- `git clone https://github.com/tinspham209/zoom-clone-expressjs`
+- `npm install`
+- `npm start`
