@@ -38,6 +38,7 @@ I have improve my knowledge about
 - bootstrap to set font-family
 - Skills of Express & NodeJS
 - Template engine with ejs
+- Debug with console.log
 
 I have understand about
 
@@ -49,6 +50,7 @@ I have understand about
   - tracking message when user typing text and hit enter key
   - append <li> tag when have message coming from server
   - tracking to scrollBottom when chat_window is full
+  - set mute, unmute button onClick
 
 ### Directory Structure
 
