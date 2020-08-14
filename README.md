@@ -15,7 +15,7 @@
 
 - Initialize NodeJS Project - DONE
 - Initialize first view - DONE
-- Create a room id
+- Create a room id - DONE
 - Add the ability to view own video
 - Add ability to allow others to stream their video
 - Add styling
