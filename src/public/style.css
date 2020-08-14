@@ -80,6 +80,7 @@ video {
 .main__header {
 	color: #f5f5f5;
 	text-align: center;
+	padding: 20px;
 }
 
 .main__chat_window {
@@ -106,6 +107,7 @@ video {
 	padding-left: 10px;
 }
 
-.unmute {
+.unmute,
+.stop {
 	color: #eb534b;
 }
