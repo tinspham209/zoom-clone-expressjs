@@ -14,6 +14,9 @@ app.use(morgan("combined"));
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
+// Set public folder
+app.use(express.static(path.join(__dirname, "public")));
+
 app.get("/", (req, res) => {
 	res.redirect(`/${uuidv4()}`);
 });
