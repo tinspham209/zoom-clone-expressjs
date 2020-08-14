@@ -11,6 +11,7 @@
 - `Morgan v1.10.0` : HTTP Logger
 - `ejs v3.1.3` : Embedded Javascript, get variables from the BE to FE
 - `uuid v8.3.0` : unique id
+- `bootstrap 4`
 
 ### Deploy
 
@@ -21,12 +22,27 @@
 - Create a room id - DONE
 - Add the ability to view own video - DONE
 - Add ability to allow others to stream their video - DONE
-- Add styling
+- Add styling - DONE
 - Add the ability to create messages
 - Add mute button
 - Add stop video button
 
 ### After this project
+
+I have improve my knowledge about
+
+- Layout with flex-box
+- class name with BEM
+- bootstrap to set font-family
+- Skills of Express & NodeJS
+- Template engine with ejs
+
+I have understand about
+
+- Create unique id room with uuid
+- Create unique id user with uuid
+- Using Socket.IO to communicate between Client & Server in Real-Time
+- Using Peer to PTP API on top of WebRTC, share media streams & data channels in Real-Time
 
 ### Directory Structure
 
