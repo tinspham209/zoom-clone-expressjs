@@ -12,6 +12,7 @@
 - `ejs v3.1.3` : Embedded Javascript, get variables from the BE to FE
 - `uuid v8.3.0` : unique id
 - `bootstrap 4`
+- `FontAwesome icons`
 
 ### Deploy
 
