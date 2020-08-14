@@ -5,6 +5,7 @@ const path = require("path");
 const PORT = 5000;
 const server = require("http").Server(app);
 const morgan = require("morgan");
+const io = require("socket.io")(server);
 
 const { v4: uuidv4 } = require("uuid");
 
@@ -23,6 +24,12 @@ app.get("/", (req, res) => {
 
 app.get("/:room", (req, res) => {
 	res.render("room", { roomId: req.params.room });
+});
+
+io.on("connection", (socket) => {
+	socket.on("join-room", () => {
+		console.log("joined room");
+	});
 });
 
 server.listen(PORT, () =>
