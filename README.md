@@ -3,11 +3,12 @@
 ### Tech-Stack
 
 - `NodeJS`
-- `ExpressJS`
-- `Nodemon` : restarting the app when file changes
-- `Morgan` : HTTP Logger
-- `ejs` : Embedded Javascript, get variables from the BE to FE
-- `uuid` : unique id
+- `ExpressJS v4.17.1`
+- `Socket.IO v2.3.0` : communicate client & server REAL-TIME ENGINE
+- `Nodemon v2.0.4` : restarting the app when file changes
+- `Morgan v1.10.0` : HTTP Logger
+- `ejs v3.1.3` : Embedded Javascript, get variables from the BE to FE
+- `uuid v8.3.0` : unique id
 
 ### Deploy
 
