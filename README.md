@@ -7,13 +7,14 @@
 - `Nodemon` : restarting the app when file changes
 - `Morgan` : HTTP Logger
 - `ejs` : Embedded Javascript, get variables from the BE to FE
+- `uuid` : unique id
 
 ### Deploy
 
 ### Plan Of Action
 
-- Initialize NodeJS Project
-- Initialize first view
+- Initialize NodeJS Project - DONE
+- Initialize first view - DONE
 - Create a room id
 - Add the ability to view own video
 - Add ability to allow others to stream their video
