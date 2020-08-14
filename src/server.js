@@ -5,6 +5,7 @@ const path = require("path");
 const PORT = 5000;
 const server = require("http").Server(app);
 const morgan = require("morgan");
+const cors = require("cors");
 const io = require("socket.io")(server);
 
 const { v4: uuidv4 } = require("uuid");
@@ -21,6 +22,8 @@ app.set("views", path.join(__dirname, "views"));
 
 // Set public folder
 app.use(express.static(path.join(__dirname, "public")));
+
+app.use(cors());
 
 app.use("/peerjs", peerServer);
 app.get("/", (req, res) => {
@@ -41,6 +44,6 @@ io.on("connection", (socket) => {
 	});
 });
 
-server.listen(PORT, () =>
+server.listen(process.env.PORT || PORT, () =>
 	console.log(`Server Running on port: http://localhost:${PORT}`)
 );
