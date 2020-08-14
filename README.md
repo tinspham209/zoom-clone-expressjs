@@ -1,4 +1,4 @@
-# Mini Project: Zoom Clone Web Application
+# Mini Project: Zoom Clone Web Application - 14-Aug-2020
 
 ### Tech-Stack
 
@@ -58,6 +58,11 @@ I have understand about
   - append 'li' tag when server send the message
   - tracking to scrollBottom when chat_window is full
   - set mute/unmute audio, play/stop video button onClick
+
+Next Steps:
+
+- Responsive for App
+- Add notification when user connect/disconnect to room
 
 ### Directory Structure
 
