@@ -50,7 +50,7 @@ I have understand about
   - tracking message when user typing text and hit enter key
   - append <li> tag when have message coming from server
   - tracking to scrollBottom when chat_window is full
-  - set mute, unmute button onClick
+  - set mute/unmute audio, play/stop video button onClick
 
 ### Directory Structure
 
