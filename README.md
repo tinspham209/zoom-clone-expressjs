@@ -2,12 +2,10 @@
 
 ### Tech-Stack
 
-- NodeJS
-- ExpressJS
-- Nodemon
-- Morgan
-
-### API used
+- `NodeJS`
+- `ExpressJS`
+- `Nodemon` : restarting the app when file changes
+- `Morgan` : HTTP Logger
 
 ### Deploy
 
